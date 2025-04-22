@@ -1,0 +1,3 @@
+# Ignorer tous les fichiers sauf ceux dans dist/
+*
+!dist/

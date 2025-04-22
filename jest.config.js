@@ -1,0 +1,24 @@
+/** @type {import('ts-jest').JestConfigWithTsJest} **/
+module.exports = {
+  testEnvironment: "node",   // L'environnement Node.js est parfait pour des tests backend
+  transform: {
+    "^.+\\.tsx?$": ["ts-jest", {}],  // Utilisation de ts-jest pour transformer le code TypeScript
+  },
+  collectCoverage: true,   // Active la collecte de la couverture de code
+  coverageDirectory: "coverage",  // Dossier où les rapports de couverture seront générés
+  coverageThreshold: {    // Optionnel: définir un seuil minimal pour la couverture
+    global: {
+      lines: 80,  // Exiger 80% de couverture de code au niveau global
+    },
+  },
+  testMatch: [
+    "**/?(*.)+(spec|test).[jt]s?(x)"   // Recherche de fichiers de test nommés comme `foo.test.ts` ou `foo.spec.ts`
+  ],
+  moduleFileExtensions: ["ts", "tsx", "js", "json"],  // Extensions de fichiers supportées
+  globals: {
+    "ts-jest": {
+      isolatedModules: true,   // Permet de ne pas transformer le fichier entier, utile pour des tests plus rapides
+    },
+  },
+  verbose: true,  // Affiche des informations détaillées lors de l'exécution des tests
+};

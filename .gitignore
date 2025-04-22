@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
+
+# Env files (si tu utilises des variables d'environnement)
+.env
+
+# IDE and editor folders
+.vscode/
+.idea/
+
+# Mac OS
+.DS_Store
+
+# npm package-lock
+package-lock.json
+
+# Jest coverage output
+coverage/
+
+# Prettier lock files
+.prettierignore
