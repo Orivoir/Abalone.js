@@ -4,6 +4,7 @@
   "description": "A functional, typed game engine for Abalone board game in TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
