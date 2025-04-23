@@ -12,6 +12,15 @@
     "baseUrl": "./src",
     "isolatedModules": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "test"]
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "eslint.config.mjs"
+  ],
+  "exclude": [
+    "node_modules",
+    "coverage",
+    "jest.config.js",
+    "eslint.config.mjs"
+  ]
 }
